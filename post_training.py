@@ -13,28 +13,20 @@ def load_and_preprocess_images(image_dir="handpic"):
     images = []
     for img_name in sorted(os.listdir(image_dir)):
         if img_name.endswith(".jpg"):
+            
             # Read image
             img_path = os.path.join(image_dir, img_name)
             img = cv2.imread(img_path)
+            
             if img is None:
                 continue
-
-            # Convert BGR to RGB
-            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-            # Resize to 128x128
-            img = cv2.resize(img, (128, 128))
-
-            # Normalize to [0,1]
-            img = img.astype(np.float32) / 255.0
-
-            # Convert to NCHW format
-            img = img.transpose(2, 0, 1)
-
-            # Add batch dimension
-            img = np.expand_dims(img, axis=0)
+            
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # Convert BGR to RGB
+            img = cv2.resize(img, (128, 128)) # Resize to 128x128
+            img = img.astype(np.float32) / 255.0 # Normalize to [0,1]
+            img = img.transpose(2, 0, 1) # Convert to NCHW format
+            img = np.expand_dims(img, axis=0) # Add batch dimension
             images.append(img)
-
     return images
 
 
