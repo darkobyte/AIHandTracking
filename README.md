@@ -2,8 +2,9 @@
 
 ## Requirements
 
-First, install PyTorch following the instructions at:
-https://pytorch.org/get-started/locally/
+1. First, install PyTorch following the instructions at: https://pytorch.org/get-started/locally/
+2. pip install model_compression_toolkit
+3. pip install imx500-converter[pt]
 
 ## Usage
 
