@@ -1,8 +1,11 @@
-# MediaPipe in PyTorch
+# AI Cam Shit
 
-Port of MediaPipe (https://github.com/google/mediapipe) tflite models to PyTorch
+## Requirements
 
-Builds upon the work of https://github.com/hollance/BlazeFace-PyTorch
+First, install PyTorch following the instructions at:
+https://pytorch.org/get-started/locally/
+
+## Usage
 
 ```python demo.py```
 
@@ -11,8 +14,3 @@ Builds upon the work of https://github.com/hollance/BlazeFace-PyTorch
 1. Face landmarks
 1. Palm detector
 1. Hand landmarks
-
-## TODO
-1. Add conversion and verification scripts
-1. Verify face landmark pipeline
-1. Improve README and samples
