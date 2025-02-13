@@ -7,6 +7,7 @@ https://pytorch.org/get-started/locally/
 
 ## Usage
 
+1. Capture hand images first:
 ```python demo.py```
 
 ## Models ported so far
