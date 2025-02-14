@@ -134,3 +134,4 @@ handpic/*
 
 # Quantized models directory
 quantized_models/*
+model/*
