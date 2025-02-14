@@ -131,3 +131,6 @@ dmypy.json
 # Hand images directory
 handpic/
 handpic/*
+
+# Quantized models directory
+quantized_models/
